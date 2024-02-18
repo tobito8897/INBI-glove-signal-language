@@ -1,36 +1,21 @@
-## Guante Traductor del Abecedario del Lenguaje de Señas
+## Sign Language Alphabet Translator Glove
 
-Código de Matlab y Arduino utilizado para el proyecto final de licenciatura.
-Los archivos incluyen la captura, análisis y visualización de los datos.
+Matlab and Arduino code used for the final bachelor's project.
+Code files include data capture, analysis and visualization.
 
 
-* ### Resumen del proyecto
+* ### Summary of the project
 
-La comunicación de las personas con discapacidad auditiva con el resto de la gente es
-complicada; a pesar de que existe la lengua de señas, una mínima parte de la población la
-conoce.
+The communication of people with hearing disabilities with the rest is complicated. Although sign language exists, a minimal part of the population knows it.
 
-En el presente proyecto, se diseñó un guante que permite traducir el abecedario de la
-lengua de señas. A través del monitoreo y procesamiento de la información proporcionada por
-diversos sensores colocados en el guante, se logró una adecuada clasificación de las señas
-realizadas; el prototipo cuenta con la posibilidad de adaptarse para la formación de palabras
-mediante el deletreo.
+In this project, a glove was designed that allows the alphabet of sign language to be translated. By monitoring and processing the information provided by various sensors placed in the glove, an adequate classification of the signs made was achieved. The prototype has the possibility of being adapted to form words through spelling.
 
-Los dispositivos utilizados son sensores de flexión resistivos (para detectar la flexión
-de los dedos), un acelerómetro (para analizar el movimiento de la mano) y de contacto (para
-confirmar el contacto entre algunos dedos). La información, es decir los valores resistivos de
-las flexo-resistencias involucradas en la seña que se realiza, es adquirida durante cortos
-intervalos de tiempo. Un promedio de los valores medidos es estimado por un ArduinoTM
-Nano; después, los datos son enviados a un script de Matlab® de forma inalámbrica. A través
-del código se obtienen las características de las señales obtenidas con el fin de entrenar una red
-neuronal, la cual nos permite clasificar las señas realizadas como letras.
+The devices used are:
+Resistive flexion sensors (to detect finger flexion).
+An accelerometer (to analyze hand movement).
+A contact sensor (to confirm contact between some fingers).
+The sensor's measures are acquired during short intervals of time. During the intervals, the alphabet signs are performed multiple times. An ArduinoTM Nano estimates an average of the measured values. The data is then sent to a Matlab® script wirelessly. Later, these measurements are used to train machine learning models. The model's goal is to classify the alphabet signs.
 
-Los resultados indican que tanto el diseño físico como el algoritmo programado (red
-neuronal) permiten clasificar la seña que los usuarios realizaron de manera aceptable, con
-índices de error alrededor de 0.09 (casos clasificados erróneamente / total de casos).
-Consideramos que la integración del hardware y su carácter inalámbrico le darían a nuestro
-prototipo la capacidad de convertirse en un instrumento de utilidad para los usuarios de la
-lengua de señas.
 
 <p align="center">
 <img src="images/Image1.JPG" width="800" align="center">
